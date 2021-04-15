@@ -1,0 +1,36 @@
+.container-nav{
+    background-color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: 0px;
+}
+
+.nav-ul{
+    margin-left: 650px;
+}
+.nav-item{
+    display: inline;
+    align-items: center;
+    text-align: center;
+}
+.nav-link{
+    margin: 10px;
+    color: beige;
+    text-decoration: none;
+}
+.nav-link-login{
+    margin: 20px;
+    color: beige;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.brand-name{
+    color: beige;
+    justify-content: center;
+    margin-left: 25px;
+}

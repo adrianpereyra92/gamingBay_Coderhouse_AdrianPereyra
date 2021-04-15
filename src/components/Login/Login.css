@@ -1,0 +1,32 @@
+.container-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 250px;
+    width: 200px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: black;
+    margin-top: 100px;
+}
+.container-form__input{ 
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: beige;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.container-form__button{
+    padding: 10px;
+    background-color: beige;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h2{
+    color: beige;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+}
