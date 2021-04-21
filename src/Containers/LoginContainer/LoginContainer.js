@@ -1,6 +1,6 @@
 import React from 'react';
-import Login from '../../components/Login/Login';
-import Visualizer from '../Visualizer/Visualizer';
+import Login from '../src/components/Login/Login';
+import Visualizer from '../src/components/Visualizer/Visualizer';
 
 
 export default class LoginContainer extends React.Component{

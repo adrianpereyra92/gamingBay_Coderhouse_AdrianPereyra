@@ -1,0 +1,16 @@
+.counter{
+    margin: 40px;
+    display: flex;
+    border-style: groove;
+    border-radius: 10%;
+    height: 100px;
+    align-items: center;
+}
+.btn{
+    height: 20px;
+    width: 30px;
+    margin: 0 20px;
+    border-style: none;
+    background-color: black;
+    color: beige;
+}

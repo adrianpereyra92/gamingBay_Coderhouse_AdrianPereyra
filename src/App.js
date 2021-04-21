@@ -1,10 +1,9 @@
 import React from 'react';
 import './App.css';
-import ItemListContainer from './components/Containers/ItemListContainer';
+import ItemListContainer from '../src/Containers/ItemListContainer/ItemListContainer';
 import NavBar from './components/NavBar/NavBar';
-// import Login from './components/Login/Login';
-// import LoginContainer from '../src/components/Containers/LoginContainer';
-// import Visualizer from './components/Visualizer/Visualizer';
+import ItemCount from './components/ItemCount/ItemCount';
+
 
 class App extends React.Component {
 
@@ -13,7 +12,7 @@ class App extends React.Component {
       <div className="container">
         <NavBar />
         <ItemListContainer saludo="Tus videojuegos favoritos, a un sólo click." name="Gaming Bay"/>
-        {/* <LoginContainer /> */}
+        <ItemCount />
         
       </div>
       

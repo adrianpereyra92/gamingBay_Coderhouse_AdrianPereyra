@@ -5,7 +5,7 @@ import cart from '../../assets/icons/shopping-cart-solid.svg';
 export default function CartWidget(){
     return(
             <div className="navbar-cart">
-            <a href="#">
+            <a href="icon">
                 <img src={cart} className="cart-icon"  alt="Cart" />
             </a>
         </div>
