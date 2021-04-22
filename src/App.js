@@ -5,6 +5,9 @@ import NavBar from './components/NavBar/NavBar';
 import ItemCount from './components/ItemCount/ItemCount';
 
 
+
+
+
 class App extends React.Component {
 
   render(){
@@ -13,7 +16,7 @@ class App extends React.Component {
         <NavBar />
         <ItemListContainer saludo="Tus videojuegos favoritos, a un sólo click." name="Gaming Bay"/>
         <ItemCount />
-        
+      
       </div>
       
     )

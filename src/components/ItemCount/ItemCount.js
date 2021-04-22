@@ -20,7 +20,6 @@ export default function ItemCount(){
                 <div type="button"> {stock >= pedido ? (
                 <div>{pedido}</div>) : (<div>Sólo disponible {stock} unidades</div>)}</div>
                 <button className="btn"onClick={onIncrement}>+</button>
-            
         </div>
     )
 }
