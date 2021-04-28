@@ -1,0 +1,55 @@
+[
+    {
+        "id": 1,
+        "title": "Grand Theft Auto V",
+        "year": "2013",
+        "genre": "accion, aventuras",
+        "cover": "https://www.gamestorrents.nu/wp-content/uploads/2019/03/gta-v.jpg",
+        "price": "$49.99"
+    }
+,
+    {
+        "id": 2,
+        "title": "Age of Empires II - Definitive Edition",
+        "year": "2020",
+        "genre": "estrategia en tiempo real",
+        "cover": "https://www.gamestorrents.nu/wp-content/uploads/2020/03/co1n24.jpg",
+        "price": "$19.99"
+    }
+,
+    {
+        "id": 3,
+        "title": "Alien isolation",
+        "year": "2014",
+        "genre": "accion",
+        "cover": "https://www.gamestorrents.nu/wp-content/uploads/portadas/Alien-Isolation-[MULTI5][Incl-NUEVO-DLC][CODEX]-(Poster).jpg",
+        "price": "$29.99"
+    }
+,
+    {
+        "id": 4,
+        "title": "Frostpunk",
+        "year": "2018",
+        "genre": "estrategia, simuladores",
+        "cover": "https://www.gamestorrents.nu/wp-content/uploads/2018/11/frost.jpg",
+        "price": "$49.99"
+    }
+,
+    {
+        "id": 5,
+        "title": "The Witcher 3",
+        "year": "2016",
+        "genre": "accion, aventuras",
+        "cover": "https://www.gamestorrents.nu/wp-content/uploads/portadas/The-Witcher-3-Wild-Hunt-Blood-and-Wine-[MULTi15][PROPHET]-(Poster).jpg",
+        "price": "$49.99"
+    }
+,
+    {
+        "id": 6,
+        "title": "Wasteland Remastered",
+        "year": "2020",
+        "genre": "estrategia, rpg",
+        "cover": "https://www.gamestorrents.nu/wp-content/uploads/2020/03/co1xzc.jpg",
+        "price": "$49.99"
+    }
+]
