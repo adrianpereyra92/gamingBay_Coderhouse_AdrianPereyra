@@ -5,11 +5,11 @@ function ItemDetailContainer({ itemId }) {
   const [item, setItem] = useState([]);
 
   const isItemId = (item) => {
-    return item.id == itemId;
+    return item.id === itemId;
   };
   useEffect(() => {
     setTimeout(() => {
-      fetch("data.json", {
+      fetch('data.json', {
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import '../../components/ItemCount/ItemCount.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function ItemCount(){
     const [pedido, setNumber] = useState(1);
@@ -14,13 +15,15 @@ export default function ItemCount(){
     }
 
     return (
-        <div className="counter">
-            
-                <button className="btn"onClick={onDecrement}>-</button>
+        <div className="counter-container">
+            <div className="counter">
+                <button className="btn-success"onClick={onDecrement}>-</button>
                 <div type="button"> {stock >= pedido ? (
-                <div>{pedido}</div>) : (<div>Sólo disponible {stock} unidades</div>)}</div>
-                <button className="btn"onClick={onIncrement}>+</button>
+                <div className="itemShow">{pedido}</div>) : (<div>Sólo disponible {stock} unidades</div>)}</div>
+                <button className="btn-success"onClick={onIncrement}>+</button>
+            </div>
         </div>
+        
     )
 }
 

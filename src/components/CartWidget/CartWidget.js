@@ -1,6 +1,6 @@
 import React from 'react';
 import '../CartWidget/CartWidget.css';
-import cart from '../../assets/icons/icons8-carrito-de-compras-24.png';
+import cart from '../../assets/icons/shopping_cart_white_24dp.svg';
 
 export default function CartWidget(){
     return(

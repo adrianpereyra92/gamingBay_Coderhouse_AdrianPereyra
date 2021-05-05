@@ -2,33 +2,19 @@ import React from "react";
 import Item from "../List/Item";
 import './ItemList.css';
 
-export default function List( postsInput ) {
+export default function List({postsInput}) {
+   
     return(
         <ul className="list">
-            {
-                postsInput.map((item) => {
-                    return(
-                        <Item key={item.id} item={item} />
-                        )  
-                }   )
-            }
+            
+            {postsInput && postsInput.map((post) => {
+                return(
+                    <Item key={post.id} post={post} />
+                )
+            })
+            } 
         </ul>
-    )
+    )   
 }
-
-
-
-
-
-
-
-
-
-// import Item from './Item';
-// import './ItemList.css';
-
-// export default function List({postsInput}){
-//     return(
-
-
-
+            
+    

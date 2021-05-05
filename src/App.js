@@ -2,16 +2,18 @@ import React from 'react';
 import './App.css';
 import ItemListContainer from '../src/Containers/ItemListContainer/ItemListContainer';
 import NavBar from './components/NavBar/NavBar';
-import ItemCount from './components/ItemCount/ItemCount';
-
+import ItemList from './components/List/ItemList'
+import 'bootstrap/dist/css/bootstrap.min.css'
 class App extends React.Component {
 
   render(){
+    
     return(
-      <div className="container">
+      
+      <div className="main-container">
         <NavBar />
-        <ItemListContainer saludo="Tus videojuegos favoritos, a un sólo click." name="Gaming Bay"/>
-        <ItemCount />
+        <ItemListContainer saludo="Tus videojuegos favoritos, a un sólo click." />
+        <ItemList />
       </div>
       
     )

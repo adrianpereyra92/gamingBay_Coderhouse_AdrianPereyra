@@ -1,38 +1,25 @@
-.container-nav{
-    background-color: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.navbar{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 80px;
-    position: absolute; 
-    top: 0px;
-   
+    font-family: 'Gilroy-extra';
+    text-decoration: none;
 }
 
-.nav-ul{
-    margin-left: 800px;
-    
+.navbar a{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
 }
-.nav-item{
-    display: inline;
-    align-items: center;
-    text-align: center;
+.navbar a:hover{
+    color: #5cb85c;
 }
-.nav-link{
-    margin: 10px;
-    color: beige;
-    text-decoration: none;
+
+.navbar .collapse{
+    justify-content: flex-end;
 }
-.nav-link-login{
-    margin: 10px;
-    color: beige;
-    text-decoration: none;
-    font-weight: bolder;
+.navbar .navbar-brand{
+    font-size: 30px;
 }
-.brand-name{
-    color: beige;
-    justify-content: center;
-    margin-left: 25px;
+nav{
+    background-color: black;
 }
+

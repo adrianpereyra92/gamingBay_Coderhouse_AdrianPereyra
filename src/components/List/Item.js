@@ -1,14 +1,31 @@
 import React from "react";
 import ItemCount from "../ItemCount/ItemCount";
+import '../List/Item.css';
 
 
-function Item({ item }) {
+function Item({ post }) {
   const onAdd = (counter) => {
     alert(`${counter} Items añadidos al carrito.`);
   };
 
   return (
-    <ItemCount initial={1} stock={item.stock} onAdd={onAdd} />
+      <div className="item-card">
+        
+        <div className="card" >
+        <img className="game-cover"src={post.cover} alt="" />
+        <div className="card-body">
+        <h5 className="card-title">{post.title}</h5>
+        <p className="card-text">Género: {post.genre}</p>
+        <p className="card-text">{post.price}</p>
+        <ItemCount initial={1} stock={post.stock} onAdd={onAdd} />
+        <button type="button" class="btn btn-success">Comprar</button>
+      </div>
+    </div>
+      </div>
+      
+    
+      
+
   );
 }
 
@@ -19,6 +36,11 @@ export default Item;
 
 
 
+{/* <img className="game-cover"src={post.cover} alt="" />
+        <li className="game-title">{post.title}</li>
+        <li className="game-genre">Género: {post.genre}</li>
+        <li className="game-price">Precio(USD): {post.price}</li>
+        <ItemCount initial={1} stock={post.stock} onAdd={onAdd} /> */}
 
 
 
@@ -28,17 +50,3 @@ export default Item;
 
 
 
-
-
-// import React from 'react';
-
-// export default function Item({post}){
-//     return(
-//         <div>
-//             <li>Title:{post.id} </li>
-//             <li>Username:{post.genre}</li>
-//             <li>Cover:{post.cover}</li>
-//         </div>
-        
-//     )
-// }
