@@ -2,35 +2,38 @@ import React from 'react';
 import '../NavBar/NavBar.css';
 import CartWidget from '../CartWidget/CartWidget';
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useHistory } from 'react-router-dom'
 
 export default function NavBar() {
 
-    return (
-        <nav className="navbar navbar-expand-lg  ">
-            <div className="container-fluid">
-                <a className="navbar-brand" href="a">Gaming Bay</a>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-                </button>
-    <div className="collapse navbar-collapse" id="navbarNav">
-      <ul className="navbar-nav">
-        <button type="button" class="btn btn-success">REGISTRATE</button>
-        <li className="nav-item">
-          <a className="nav-link " href="inicio">INICIO</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link " href="novedades">NOVEDADES</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link " href="ofertas">OFERTAS</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link " href="categorias">CATEGORÍAS</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <CartWidget />
-</nav>
-    )
+  let history = useHistory();
+
+  return (
+    <nav className="navbar navbar-expand-lg  ">
+      <div className="container-fluid">
+        <a className="navbar-brand" href="a">Gaming Bay</a>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav">
+            <button type="button" className="btn btn-success">REGISTRATE</button>
+            <li className="nav-item">
+              <a className="nav-link " href="inicio" onClick={() => history.push("/inicio")}>INICIO</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link " href="juegos" onClick={() => history.push("/juegos")}>JUEGOS</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link " href="laptops" onClick={() => history.push("/laptops")}>LAPTOPS</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link " href="about" onClick={() => history.push("/about")}>ABOUT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <CartWidget />
+    </nav>
+  )
 }

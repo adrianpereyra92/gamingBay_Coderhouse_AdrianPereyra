@@ -1,52 +1,27 @@
-import React from "react";
-import ItemCount from "../ItemCount/ItemCount";
+import React from 'react';
 import '../List/Item.css';
+import ItemDetail from '../ItemDetail/ItemDetail'
+import { useHistory} from 'react-router-dom';
+
+
 
 
 function Item({ post }) {
-  const onAdd = (counter) => {
-    alert(`${counter} Items añadidos al carrito.`);
-  };
-
-  return (
-      <div className="item-card">
-        
-        <div className="card" >
-        <img className="game-cover"src={post.cover} alt="" />
-        <div className="card-body">
-        <h5 className="card-title">{post.title}</h5>
-        <p className="card-text">Género: {post.genre}</p>
-        <p className="card-text">{post.price}</p>
-        <ItemCount initial={1} stock={post.stock} onAdd={onAdd} />
-        <button type="button" class="btn btn-success">Comprar</button>
-      </div>
-    </div>
-      </div>
-      
     
-      
 
-  );
+    let history = useHistory();
+
+    return (
+        <div className="item-card">
+          <div className="card" >
+          <img className="game-cover"src={post.cover} alt="" />
+          <div className="card-body">
+          <p className="card-text"> {post.title}</p>
+          <button type="button" className="btn btn-success" onClick={() => history.push("/juegos/:detail")} >Ver detalles</button>
+        </div>
+      </div>
+        </div>
+    );
 }
 
 export default Item;
-
-
-
-
-
-
-{/* <img className="game-cover"src={post.cover} alt="" />
-        <li className="game-title">{post.title}</li>
-        <li className="game-genre">Género: {post.genre}</li>
-        <li className="game-price">Precio(USD): {post.price}</li>
-        <ItemCount initial={1} stock={post.stock} onAdd={onAdd} /> */}
-
-
-
-
-
-
-
-
-

@@ -15,11 +15,12 @@ export default function ItemCount(){
     }
 
     return (
+        
         <div className="counter-container">
             <div className="counter">
                 <button className="btn-success"onClick={onDecrement}>-</button>
                 <div type="button"> {stock >= pedido ? (
-                <div className="itemShow">{pedido}</div>) : (<div>Sólo disponible {stock} unidades</div>)}</div>
+                <div className="itemShow">{pedido}</div>) : (<div>Máx. {stock} unidades</div>)}</div>
                 <button className="btn-success"onClick={onIncrement}>+</button>
             </div>
         </div>
