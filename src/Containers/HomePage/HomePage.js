@@ -1,5 +1,5 @@
 import React from 'react';
-import Background from '../../assets/img/banner-bg.jpg';
+import Background from '../../assets/img/newBanner-bg.jpg';
 import '../HomePage/HomePage.css';
 
 export default function HomePage ({saludo}) {

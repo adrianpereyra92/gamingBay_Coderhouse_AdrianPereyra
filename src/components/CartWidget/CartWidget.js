@@ -5,8 +5,8 @@ import cart from '../../assets/icons/shopping_cart_white_24dp.svg';
 export default function CartWidget(){
     return(
             <div className="navbar-cart">
-            <a href="icon">
-                <img src={cart} className="cart-icon"  alt="Cart" />
+            <a href="cart" >
+                <img src={cart} className="cart-icon" alt="Cart" />
             </a>
         </div>
     )

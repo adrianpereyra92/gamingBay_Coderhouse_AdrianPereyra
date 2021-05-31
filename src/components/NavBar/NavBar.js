@@ -11,15 +11,15 @@ export default function NavBar() {
   return (
     <nav className="navbar navbar-expand-lg  ">
       <div className="container-fluid">
-        <a className="navbar-brand" href="a">Gaming Bay</a>
+        <a className="navbar-brand" href="/" onClick={() => history.push("/")}>Gaming Bay</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
-            <button type="button" className="btn btn-success">REGISTRATE</button>
+            <button type="button" className="btn btn-success">INGRESAR</button>
             <li className="nav-item">
-              <a className="nav-link " href="inicio" onClick={() => history.push("/inicio")}>INICIO</a>
+              <a className="nav-link " href="/" onClick={() => history.push("/")}>INICIO</a>
             </li>
             <li className="nav-item">
               <a className="nav-link " href="juegos" onClick={() => history.push("/juegos")}>JUEGOS</a>
@@ -33,7 +33,7 @@ export default function NavBar() {
           </ul>
         </div>
       </div>
-      <CartWidget />
+      <CartWidget onClick={() => history.push("/cart")}/>
     </nav>
   )
 }

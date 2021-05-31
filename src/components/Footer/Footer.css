@@ -1,0 +1,18 @@
+footer{
+    background-color: black;
+    height: 150px;
+    font-family: 'Gilroy-extra';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.footer-text{
+    font-size: 20px;
+}
+
+.footer-text a {
+    color: #5cb85c;
+    text-decoration: none;
+}

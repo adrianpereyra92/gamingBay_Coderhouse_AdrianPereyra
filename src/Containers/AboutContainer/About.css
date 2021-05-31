@@ -1,0 +1,12 @@
+.about-container{
+    height: 450px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.parrafo{
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
